@@ -66,7 +66,7 @@ Network: Sent 22.43 KB | Recv 30.92 KB
 
 ## Demo Scripts
 
-### **Demo 1 — Silent Mode (Only Summary Output)**
+### **[Demo 1](Demo1.py) — Silent Mode (Only Summary Output)**
 
 ```python
 from ResourceMonitor import ResourceMonitor
@@ -81,7 +81,7 @@ monitor.stop()
 
 ---
 
-### **Demo 2 — Log Mode (Show CodeCarbon Logs)**
+### **[Demo 2](Demo2.py) — Log Mode (Show CodeCarbon Logs)**
 
 ```python
 from ResourceMonitor import ResourceMonitor
