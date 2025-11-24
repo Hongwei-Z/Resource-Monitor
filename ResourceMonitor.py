@@ -112,13 +112,13 @@ class ResourceMonitor:
                 ram_power = getattr(final, 'ram_power', 0.0)
 
         # Print main report
-        print("\n" + "=" * 38)
+        print("\n" + "=" * 40)
         print(f"Resources Monitor Report:")
         print(f"Execution Time: {duration:.6f} seconds")
         print(f"Total Energy: {total_energy:.6f} kWh")
-        print(f"  • CPU : {cpu_energy:.6f} kWh (Power: {cpu_power:.1f} W)")
-        print(f"  • GPU : {gpu_energy:.6f} kWh (Power: {gpu_power:.1f} W)")
-        print(f"  • RAM : {ram_energy:.6f} kWh (Power: {ram_power:.1f} W)")
+        print(f"  • CPU: {cpu_energy:.6f} kWh (Power: {cpu_power:.1f} W)")
+        print(f"  • GPU: {gpu_energy:.6f} kWh (Power: {gpu_power:.1f} W)")
+        print(f"  • RAM: {ram_energy:.6f} kWh (Power: {ram_power:.1f} W)")
 
         # Resource usage stats
         if self.cpu_usage:
@@ -136,7 +136,7 @@ class ResourceMonitor:
             total_recv = self.network_recv[-1][1]
             print(f"Network: Sent {total_sent / 1024:.2f} KB | Recv {total_recv / 1024:.2f} KB")
 
-        print("=" * 38)
+        print("=" * 40)
 
         self._reset()
 

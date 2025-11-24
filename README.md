@@ -1,8 +1,10 @@
 # Resource Monitor  
-A lightweight and convenient resource monitoring tool built on psutil and CodeCarbon.  
+### A simple and easy-to-use Python code resource consumption monitoring program based on psutil and CodeCarbon.
 It tracks CPU/GPU/RAM energy consumption, execution time, system load, and network usage during code execution.
 
-ResourceMonitor supports two output modes:
+---
+
+Resource Monitor supports two output modes:
 
 1. **Silent Mode** – only prints a clean summary report  
 2. **Log Mode** – prints full CodeCarbon logging output during execution
@@ -49,24 +51,24 @@ monitor.stop()
 ## Example Output (Silent Mode)
 
 ```
-======================================
+========================================
 Resources Monitor Report:
 Execution Time: 12.626897 seconds
 Total Energy: 0.000119 kWh
-  • CPU : 0.000072 kWh (Power: 42.5 W)
-  • GPU : 0.000013 kWh (Power: 9.9 W)
-  • RAM : 0.000034 kWh (Power: 20.0 W)
+  • CPU: 0.000072 kWh (Power: 42.5 W)
+  • GPU: 0.000013 kWh (Power: 9.9 W)
+  • RAM: 0.000034 kWh (Power: 20.0 W)
 CPU Usage: Avg 5.45% | Max 17.50%
 Memory Usage: Avg 46.55% | Max 46.70%
 Network: Sent 22.43 KB | Recv 30.92 KB
-======================================
+========================================
 ```
 
 ---
 
 ## Demo Scripts
 
-### **[Demo 1](Demo1.py) — Silent Mode (Only Summary Output)**
+### **[Demo 1 (Demo1.py)](Demo1.py) — Silent Mode (Only Summary Output)**
 
 ```python
 from ResourceMonitor import ResourceMonitor
@@ -81,7 +83,7 @@ monitor.stop()
 
 ---
 
-### **[Demo 2](Demo2.py) — Log Mode (Show CodeCarbon Logs)**
+### **[Demo 2 (Demo2.py)](Demo2.py) — Log Mode (Show CodeCarbon Logs)**
 
 ```python
 from ResourceMonitor import ResourceMonitor
@@ -148,17 +150,17 @@ Running this script produces full CodeCarbon logs such as:
 [codecarbon INFO @ 12:04:03] Energy consumed for all GPUs : 0.000045 kWh. Total GPU Power : 29.584723234701567 W
 [codecarbon INFO @ 12:04:03] 0.000310 kWh of electricity and 0.000000 L of water were used since the beginning.
 
-======================================
+========================================
 Resources Monitor Report:
 Execution Time: 21.839347 seconds
 Total Energy: 0.000310 kWh
-  • CPU : 0.000180 kWh (Power: 42.5 W)
-  • GPU : 0.000045 kWh (Power: 29.6 W)
-  • RAM : 0.000085 kWh (Power: 20.0 W)
+  • CPU: 0.000180 kWh (Power: 42.5 W)
+  • GPU: 0.000045 kWh (Power: 29.6 W)
+  • RAM: 0.000085 kWh (Power: 20.0 W)
 CPU Usage: Avg 5.07% | Max 14.80%
 Memory Usage: Avg 49.47% | Max 49.70%
 Network: Sent 50.18 KB | Recv 315.63 KB
-======================================
+========================================
 
 ```
 
